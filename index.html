@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Card Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover img {
+            opacity: 0.9;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .card-button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-button:hover {
+            background-color: #0056b3;
+        }
+
+        .card-button:focus {
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="card-container">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Card Image 1">
+        <div class="card-content">
+            <h2 class="card-title">Card Title 1</h2>
+            <p class="card-description">This is a description for the first card. It has some details about what this card represents.</p>
+            <button class="card-button">Learn More</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Card Image 2">
+        <div class="card-content">
+            <h2 class="card-title">Card Title 2</h2>
+            <p class="card-description">This is a description for the second card. It contains different information and highlights the key points.</p>
+            <button class="card-button">Explore</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Card Image 3">
+        <div class="card-content">
+            <h2 class="card-title">Card Title 3</h2>
+            <p class="card-description">The third card description goes here. This is another example of a card layout with interactive features.</p>
+            <button class="card-button">Get Started</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
